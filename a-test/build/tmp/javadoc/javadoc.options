@@ -1,0 +1,27 @@
+-Xdoclint:none '-quiet'
+-author 
+-classpath '/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/a-test/build/classes/java/main:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/a-test/build/classes/kotlin/main:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/a-test/build/resources/main:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/spring-core/build/libs/spring-core-5.0.2.RELEASE.jar:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/spring-core/build/libs/spring-cglib-repack-3.2.5.jar:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/spring-core/build/libs/spring-objenesis-repack-2.6.jar:/Users/huxianghao/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/spring-jcl/build/libs/spring-jcl-5.0.2.RELEASE.jar'
+-d '/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/a-test/build/docs/javadoc'
+-doctitle 'a-test 5.0.2.RELEASE API'
+-header 'a-test'
+-link 'http://docs.oracle.com/javase/8/docs/api/'
+-link 'http://docs.oracle.com/javaee/7/api/'
+-link 'http://docs.oracle.com/cd/E13222_01/wls/docs90/javadocs/'
+-link 'http://pic.dhe.ibm.com/infocenter/wasinfo/v7r0/topic/com.ibm.websphere.javadoc.doc/web/apidocs/'
+-link 'http://glassfish.java.net/nonav/docs/v3/api/'
+-link 'http://docs.jboss.org/jbossas/javadoc/4.0.5/connector/'
+-link 'http://docs.jboss.org/jbossas/javadoc/7.1.2.Final/'
+-link 'http://tiles.apache.org/tiles-request/apidocs/'
+-link 'http://tiles.apache.org/framework/apidocs/'
+-link 'http://www.eclipse.org/aspectj/doc/released/aspectj5rt-api/'
+-link 'http://ehcache.org/apidocs/2.10.4'
+-link 'http://quartz-scheduler.org/api/2.2.1/'
+-link 'http://fasterxml.github.io/jackson-core/javadoc/2.8/'
+-link 'http://fasterxml.github.io/jackson-databind/javadoc/2.8/'
+-link 'http://fasterxml.github.io/jackson-dataformat-xml/javadoc/2.8/'
+-link 'http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/'
+-protected 
+-quiet 
+-use 
+-windowtitle 'a-test 5.0.2.RELEASE API'
+'/Users/huxianghao/IdeaProjects/spring-framework-5.0.2.RELEASE-中文注释版/a-test/src/main/java/org/springframework/Main.java'

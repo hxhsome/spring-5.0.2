@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="rob" class="org.springframework.tests.sample.beans.TestBean" scope="prototype" autowire="constructor"/>
+
+    <bean id="sally" class="org.springframework.tests.sample.beans.TestBean" scope="prototype"/>
+
+    <bean id="props1" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="properties">
+            <value>name=props1</value>
+        </property>
+    </bean>
+
+    <bean id="props2" class="org.springframework.beans.factory.config.PropertiesFactoryBean" autowire-candidate="false">
+        <property name="properties">
+            <value>name=props2</value>
+        </property>
+    </bean>
+
+</beans>
