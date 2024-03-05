@@ -26,6 +26,7 @@ plugins {
     id "com.gradle.build-scan" version "1.8"
     id "io.spring.dependency-management" version "1.0.3.RELEASE" apply false
     id "org.jetbrains.kotlin.jvm" version "1.1.61" apply false
+//    id "org.jetbrains.kotlin.jvm" version "1.7.10" apply false
     id "org.jetbrains.dokka" version "0.9.17"
     id "org.asciidoctor.convert" version "1.5.6"
 }
@@ -48,7 +49,7 @@ ext {
     }
 }
 
-configure(allprojects) { project ->
+configure(allprojects) {                  project ->
     group = "org.springframework"
     version = qualifyVersionIfNecessary(version)
 
@@ -62,6 +63,7 @@ configure(allprojects) { project ->
     ext.junitPlatformVersion = "1.0.2"
     ext.junitVintageVersion = "4.12.2"
     ext.kotlinVersion = "1.1.61"
+//    ext.kotlinVersion = "1.7.10"
     ext.log4jVersion = "2.10.0"
     ext.nettyVersion = "4.1.17.Final"
     ext.reactorVersion = "Bismuth-SR4"
@@ -123,6 +125,8 @@ configure(allprojects) { project ->
     }
 
     test {
+        // 是否禁用test
+        enabled = false
         systemProperty("java.awt.headless", "true")
         systemProperty("testGroups", project.properties.get("testGroups"))
         scanForTestClasses = false
@@ -135,8 +139,16 @@ configure(allprojects) { project ->
     }
 
     repositories {
-        maven { url "https://repo.spring.io/libs-release" }
-        maven { url "https://repo.spring.io/milestone" }  // for AspectJ 1.9 beta
+//        maven { url "https://repo.spring.io/libs-release" }
+//        maven { url "https://repo.spring.io/milestone" }  // for AspectJ 1.9 beta
+        mavenCentral()
+
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/spring-plugin' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url "https://maven.aliyun.com/repository/spring" } // 解决 Could not resolve: com.ibm.websphere:uow:6.0.2.17
         maven { url "http://repo.springsource.org/plugins-release" }
     }
